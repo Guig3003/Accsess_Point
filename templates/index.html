@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Accesss Point
+  </title>
+
+</head>
+
+<body>
+  <form method="POST">
+    <h2>Móvel</h2>
+    <input type="text" name="origem" placeholder="origem" />
+    <input type="text" name="destino" placeholder="destino" />
+    <input type="submit" value="Submit" />
+  </form>
+  {% if solution != None %}
+  <ul>
+    {% for instruction in solution %}
+    <li>{{ instruction }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</body>
+
+</body>
+
+</html>
